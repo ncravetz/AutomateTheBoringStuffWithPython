@@ -1,6 +1,10 @@
 #! /usr/bin/env python3
 # DeleteBigFiles.py - Walk a folder and find files bigger than a 100MB.
 
+import logging
+logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s - %(message)s')
+
+
 import os, shutil, pprint
 bigFiles = []
 
